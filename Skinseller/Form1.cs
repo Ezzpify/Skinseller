@@ -4,7 +4,6 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
 using System.IO;
-using System.Diagnostics;
 using Newtonsoft.Json.Linq;
 using System.Runtime.InteropServices;
 
@@ -202,7 +201,12 @@ namespace Skinseller
                 }
                 catch
                 {
-                    MessageBox.Show("Woops. Error somewhere with the Steam API. Try again.");
+                    /*Usually happens because item value is too low, and we don't really care*/
+                    MessageBox.Show("Something happened.\n\n"
+                        + "• Steam API is down\n"
+                        + "• You no longer have the item in your inventory\n"
+                        + "• Inventory is not public\n"
+                        + "• Item value is too low", "Error");
                     return;
                 }
 

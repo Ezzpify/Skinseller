@@ -75,6 +75,7 @@
             this.btn_SaveImg = new System.Windows.Forms.Label();
             this.btn_ShowMenu = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.Container.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel_Menu.SuspendLayout();
@@ -96,8 +97,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_EditImg)).BeginInit();
             this.itemMenu.SuspendLayout();
+            this.DropZone.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.ControlBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // Container
@@ -390,9 +393,9 @@
             this.panel6.Controls.Add(this.editPanel);
             this.panel6.Controls.Add(this.itemListView);
             this.panel6.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel6.Location = new System.Drawing.Point(24, 123);
+            this.panel6.Location = new System.Drawing.Point(24, 98);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(578, 242);
+            this.panel6.Size = new System.Drawing.Size(578, 267);
             this.panel6.TabIndex = 2;
             // 
             // editPanel
@@ -503,7 +506,7 @@
             this.itemListView.LargeImageList = this.itemImageList;
             this.itemListView.Location = new System.Drawing.Point(0, 0);
             this.itemListView.Name = "itemListView";
-            this.itemListView.Size = new System.Drawing.Size(578, 242);
+            this.itemListView.Size = new System.Drawing.Size(578, 267);
             this.itemListView.TabIndex = 0;
             this.itemListView.UseCompatibleStateImageBehavior = false;
             // 
@@ -541,8 +544,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DropZone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DropZone.BackgroundImage")));
             this.DropZone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.DropZone.Controls.Add(this.pictureBox9);
             this.DropZone.Cursor = System.Windows.Forms.Cursors.Default;
-            this.DropZone.Location = new System.Drawing.Point(0, 25);
+            this.DropZone.Location = new System.Drawing.Point(0, 0);
             this.DropZone.Name = "DropZone";
             this.DropZone.Size = new System.Drawing.Size(605, 92);
             this.DropZone.TabIndex = 1;
@@ -595,6 +599,16 @@
             this.btn_ShowMenu.Text = "► Show menu";
             this.btn_ShowMenu.Click += new System.EventHandler(this.btn_ShowMenu_Click);
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(58)))));
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 91);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(605, 1);
+            this.pictureBox9.TabIndex = 12;
+            this.pictureBox9.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -638,9 +652,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_EditImg)).EndInit();
             this.itemMenu.ResumeLayout(false);
+            this.DropZone.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ControlBar.ResumeLayout(false);
             this.ControlBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -692,6 +708,7 @@
         private System.Windows.Forms.Label btn_ShowMenu;
         private System.Windows.Forms.Label btn_SaveImg;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
 
