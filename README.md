@@ -9,7 +9,7 @@ It will then show you a window where you can use the price the program provided,
 
 Preview 1:
 
-[!First](http://i.imgur.com/bTnS2wn.gif)
+![First](http://i.imgur.com/bTnS2wn.gif)
 
 Preview 2:
 
