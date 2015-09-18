@@ -7,6 +7,8 @@ With this program you can simply drag an item that you want to sell from your in
 
 It will then show you a window where you can use the price the program provided, or you can set it yourself. If it's a high-tier item it won't be able to pick a price from the market, so you have to enter one yourself.
 
+You can also set the background color, and you can load your own image backgrounds which you can make yourself in photoshop/paint or whatever you prefer. Although it SHOULD be 85x85 pixels.
+
 Preview 1:
 
 ![First](http://i.imgur.com/bTnS2wn.gif)
